@@ -31,3 +31,8 @@ def test_greet_with_unicode_name(client):
     response = client.get("/api/greet/Éowyn")
     assert response.status_code == 200
     assert response.get_json() == {"message": "Hello, Éowyn!"}
+
+def test_greet_with_special_chars(client):
+    response = client.get("/api/greet/!£$%^&*()_+{]{}")
+    assert response.status_code == 200
+    assert response.get_json() == {"message": "Hello, !£$%^&*()_+{]{}!"}
