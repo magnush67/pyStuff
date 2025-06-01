@@ -9,4 +9,4 @@ def greet(name):
 if __name__ == "__main__":
     app.run(debug=True)
 
-# To see the app running http://localhost:5000/api/greet/Alice
+# To see the app running http://localhost:5000/api/greet/Magnus
