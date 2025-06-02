@@ -1,1 +1,5 @@
 # pyStuff
+
+"app.py" is just a small webapp to reflect the user name being greeted 
+http://127.0.0.1:5000/api/greet/Magnus
+
